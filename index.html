@@ -137,7 +137,7 @@
         <div class="portfolio-grid">
               <div class="portfolio-item"> 
                 <div class="portimg-wrapper">
-                <img class="portfolio-image" src="images/formm.png" alt="PI-form-Web">
+                <img class="portfolio-image" src="Images/formm.png" alt="PI-form-Web">
                 </div>
                 <div class="portfolio-text">
                  <span>FORM DESIGN</span>
@@ -148,7 +148,7 @@
                
                <div class="portfolio-item"> 
                 <div class="portimg-wrapper">
-                <img class="portfolio-image" src="images/tablee.png"  alt="ED-Table">
+                <img class="portfolio-image" src="Images/tablee.png"  alt="ED-Table">
                 </div>
                 <div class="portfolio-text">
                  <span>Table DESIGN</span>
@@ -159,7 +159,7 @@
 
                 <div class="portfolio-item">
                 <div class="portimg-wrapper">
-                <img class="portfolio-image" src="images/react11.png"  alt="profile-card">
+                <img class="portfolio-image" src="Images/react11.png"  alt="profile-card">
                 </div>
                 <div class="portfolio-text">
                  <span>CARD</span>
@@ -170,7 +170,7 @@
 
                 <div class="portfolio-item">
                 <div class="portimg-wrapper">
-                <img class="portfolio-image" src="images/react22.png"  alt="e-commerce-catalogue">
+                <img class="portfolio-image" src="Images/react22.png"  alt="e-commerce-catalogue">
                 </div>
                 <div class="portfolio-text">
                  <span>E-COMMERCE</span>
@@ -236,7 +236,9 @@
             </div>
 
             <div class="form-overall">
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                 <input type="hidden" name="access_key" value="8122ec8d-3587-4d31-9c54-6b767057c735">
+
                 <div class="form-inp">
                 <input name="name" type="text" placeholder="Your name">
                 </div>
@@ -247,7 +249,7 @@
                 <input name="subject" type="text" placeholder="Subject">
                 </div>
                 <div class="form-inp">
-                <textarea placeholder="Tell me about your project..." rows="6" required></textarea>
+                <textarea name="message" placeholder="Tell me about your project..." rows="6" required></textarea>
                 </div>
 
                 <button type="submit" class="form-sub">
