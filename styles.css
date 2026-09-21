@@ -589,4 +589,108 @@ footer h4 {
     letter-spacing: -0.5px;
 }
 
+@media (max-width: 992px) {
+    header, #about, #expertise, #work, #pricing, #contact {
+        padding: 80px 24px; 
+        min-height: auto; 
+    }
 
+    header, #about, #contact {
+        flex-direction: column; 
+        text-align: center;
+        gap: 40px;
+    }
+
+    .header-top-text, .about-side-style, .form-overall {
+        max-width: 100%;
+        width: 100%; /* Take full layout width on mid-size screens */
+    }
+
+    .header-highlight {
+        margin: 0 auto 1.5rem auto; /* Center highlight tag */
+    }
+
+    .header-bottom-text {
+        justify-content: center; /* Center buttons */
+    }
+
+    .about-stats {
+        justify-content: center; /* Center stats row */
+    }
+}
+
+/* Mobile Phones (Max width 640px) */
+@media (max-width: 640px) {
+    /* 1. Navigation Tweaks */
+    nav {
+        padding: 0 16px;
+    }
+    
+    .nav-links {
+        display: none; /* Hides desktop navigation links from breaking headers */
+        /* Note: For a fully functional hamburger menu later, you would use JS toggles here */
+    }
+
+    /* 2. Hero / Header Changes */
+    .header-top-text h1 {
+        font-size: 2.2rem; /* Make big text readable on small displays */
+    }
+
+    .header-image, .about-image {
+        width: 100%;
+        max-width: 300px; /* Force images to shrink inside viewport boundaries */
+        height: auto;
+    }
+
+    /* 3. Skill Alignment */
+    .expertise-skills {
+        grid-template-columns: 1fr; /* Switch from 2 columns to 1 stacked column */
+        gap: 16px;
+    }
+
+    /* 4. Portfolio Projects */
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* Stack portfolio items on top of each other */
+        width: 100%;
+        padding: 0;
+        gap: 32px;
+    }
+
+    /* 5. Responsive Pricing Table */
+    #pricing table {
+        width: 100%;
+        display: block;
+        overflow-x: auto; /* Enables smooth left-to-right swipe scrolling for tables on tiny screens */
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* 6. Contact Form Alignment */
+    form {
+        padding: 10px 0; /* Remove side padding on form elements */
+    }
+
+    .contactlist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 7. Footer Layout Fixes */
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 24px 16px;
+        gap: 16px;
+        text-align: center;
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
