@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Form 2</title>
+    <style>
+
+        h1 {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: 'Times New Roman', Times, serif;
+
+
+        }
+
+        form {
+            margin: 0 auto; 
+            background-color:#fafa53;
+            padding: 10px;
+            width:50%;
+            height:90%;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        div {
+            margin-bottom: 10px;
+            color: black;
+        
+        }
+
+        fieldset {
+            border-radius: 10px;
+            background-color: #ffffff;
+            margin-bottom:10px;
+            border: 0.5px inset rgb(114, 112, 112)
+        }
+
+        .bottom {
+            border: none;
+            border-bottom: 0.5px solid black;
+        }
+
+        </style>
+</head>
+<body>
+  <form>
+    <h1>Medical <br>
+        Information <br>
+         Form</h1>
+
+    <fieldset>
+        <legend>Personal Information </legend>
+        <div>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" class="bottom">
+        </div>
+
+        <div>
+        <label for="address" placeholder="Enter your address">Address:</label>
+        <input id="address" name="address" type="text" class="bottom">
+        </div>
+
+        <div>
+        <label for="tel">Mobile Number:</label>
+        <input id="tel" name="tel" type="text" class="bottom" pattern="030-1234-5678">
+        </div>
+    </fieldset>
+
+    <fieldset>             
+        <legend>Career Information </legend>
+
+        <div>
+        <label for="occupation">Occupation:</label>
+        <input id="occupation" name="occupation" type="text" class="bottom">
+        </div>
+
+        <div>
+        <label for="experience">Duration of experience:</label>
+        <input id="experience"  name="experience" type="text" class="bottom">
+        </div>
+
+        <div>
+        <label for="range">Rate your Activity  Level:</label>
+        <input id="range" name="range" type="range" value="5" min="0" max="10">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Medical Information </legend>
+
+        <div>
+        <label for="medical">Medical Condition:</label>
+        <input id="medical" name="medical" type="text" class="bottom"s>
+        </div>
+        
+        <label for="blood type">Blood Group:</label>
+
+        <div>
+        <input id="apos" name="blood type" type="radio">
+        <label for="apos">A+</label>
+        </div>
+
+        <div>
+        <input id="aneg" name="blood type" type="radio">
+        <label for="aneg">A-</label>
+        </div>
+
+        <div>
+        <input id="bpos" name="blood type" type="radio">
+        <label for="bpos">B+</label>
+        </div>
+
+        <div>
+        <input id="bneg" name="blood type" type="radio">
+        <label for="bneg">B-</label>
+        </div>
+
+        <div>
+        <input id="opos" name="blood type" type="radio">
+        <label for="opos">O+</label>
+        </div>
+
+        <div>
+        <input id="oneg" name="blood type" type="radio">
+        <label for="oneg">O-</label> 
+        </div>
+
+        <div>
+        <input id="abpos" name="blood type" type="radio">
+        <label for="abpos">AB+</label>
+        </div>
+
+        <div>
+        <input id="abneg" name="blood type" type="radio">
+        <label for="abneg">AB-</label>
+        </div>
+
+        <div>
+        <label for="tel">Genotype:</label>
+        <select id="genotype" name="genotype"> 
+            <option value="AA">AA</option>
+            <option value="SS">SS</option>
+            <option value="AS" selected>AS</option>
+            <option value="AC">AC</option>
+        </select>
+        </div>
+    </fieldset>
+
+  </form>
+</body>
+</html>

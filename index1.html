@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-BR">
+<head>
+<title> Frontend practice 1</title>
+<link rel="icon" href="./Images/one_growth.jpg" type="image/x-icon">
+<meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    
+body{
+    border: 2px solid rgb(36, 245, 8);
+    color: rgb(3, 24, 3);
+    background-color: rgb(12, 240, 114);
+       
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:center;
+}
+blockquote{
+    font-size: 20px;
+    text-align: justify;
+    border: 2px solid rgb(28, 139, 14);
+    background-color: rgb(38, 180, 19);
+    background-size: cover;
+}
+
+p #form {
+    font-size: 1.5vw;
+    text-align: justify;
+   background-size: cover;
+}
+
+a link{
+    color:cream;
+}
+a visited{
+    color:brown;
+}
+a hover{
+    color:black;
+}
+a active{
+    color:yellow;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    text-align: center;
+
+}
+
+div.overall{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+   
+}
+ .card {
+
+    padding: 15px; 
+    border-style: dotted;
+    border-radius: 15px
+
+}
+
+.button {
+    border-radius: 5px;
+    background-color: rgb(191, 235, 142);
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: brown;
+}
+
+.list {
+    list-style-type: square;
+}
+ </style>
+ </head>
+
+<body>
+
+<h1>Solihah Eniola Shittu</h1>
+<h2>A fullstack developer in training</h2>
+
+<p>
+ I'm Solihah, a young developer in training, passionate about learning— how to build, my religion,
+  removing the flag of a mediocre being attached to whatever has to do with me, and all that is in between. 
+ </p>
+
+<p>
+ Being a lover of growth, I am passionate about doing things that help me become a better version of myself. 
+ So, whenever I am not found training on my path to become a fullstack developer, I seek to learn more about my religion,
+  teach the knowledge of it, read, study, or <del>simplyyy</del> simply  engage in my <i>full-house daughter</i> duties.  
+ </p>
+
+<p>
+    <img src="data:image/jpeg;base64,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"
+    alt="smiles" style="width:12%; height:12%; float: right;">
+    Attached below is a link to one of my favourite growth platform: </p>
+
+
+<a href="https://www.one-growth.com/programs" target="_top">
+   Where
+Consistency
+Becomes Normal
+</a><br>
+
+<p>One of my favourite quotes tapped from the <mark> VP. of One Growth</mark> is this: 
+
+<blockquote>
+   <b> Every 1 adds up. One action, one change, one moment of effort, 
+    when compounded over time, these lead to monumental transformations.</b>
+    
+  <br>  <cite>
+         Kaatib Yusuf
+    </cite>
+</blockquote>
+
+<p>Proceeding, I will like to share more about this incredible platform 
+    and its impact on personal and professional growth through their various initiatives, programs and resouces.
+</p>
+
+<div class="overall"> 
+
+    <div class= 'card' style="background-color: rgb(245, 105, 187); "> 
+      <h3>One Growth Personal Mentorship</h3>
+    <p> Built to guide you closely and intentionally. You get direct support, honest feedback, 
+    and clear direction tailored to your situation. 
+     It helps you stay accountable, fix what\'s holding you back, 
+     and grow with structure so you can move forward with confidence and consistency.</p>
+
+     <button  type="button" class="button"> What you stand to gain by erolling:</button>
+
+     <ul class="list">
+        <li>Clear, personalized guidance tailored to your needs</li>
+        <li>Strong accountability to ensure consistent progress</li>
+     </ul>
+
+    </div>
+
+    <div class= 'card' style="background-color: rgb(255, 74, 2);"> 
+      <h3>One Growth Clarity Session</h3>
+      <p>Designed to help you step away from confusion and scattered effort, 
+    and begin to understand what you actually want, what matters now, and what can wait. 
+    Through guided reflection and structured conversations, 
+    you gain clarity on your next steps, build a focused plan, and start making decisions with confidence
+     instead of doubt.</p>
+
+     <button  type="button" class="button"> What you stand to gain by erolling:</button>
+
+     <ul class="list">
+        <li>Clear, personalized guidance tailored to your needs</li>
+        <li>Strong accountability to ensure consistent progress</li>
+     </ul>
+
+    </div>
+
+    <div class= 'card' style="background-color: rgb(9, 161, 231);"> 
+    <h3>One Growth Writing Academy</h3>
+    <p>The One Growth Writing Academy is a structured online writing programme built for people who want to write with clarity, consistency and purpose. 
+        This is useful whether you are building a newsletter, growing a blog, or writing long-form articles for an audience,
+         this course gives you the frameworks, feedback loops and practical reps to get there.</p>
+
+     <button  type="button" class="button"> What you stand to gain by erolling:</button>
+
+     <ul class="list">
+        <li>Clear, personalized guidance tailored to your needs</li>
+        <li>Strong accountability to ensure consistent progress</li>
+     </ul>
+
+    </div>
+    
+    </div>
+
+    <p>I tell you, making the decision to be part of this journey 
+        is one of the best choices you can make for your future. <br> 
+        To help you take this life changing step, fill in the form below
+         to get started on your journey to growth and success:
+    </p>
+
+    <form id="form" action="https://www.one-growth.com/programs" method="post">
+        <label for="gsname"> Growth Seeker's Name: </label><br>
+        <input id="gsname" type="text" name="gsname" ><br>
+        <label for="gsemail"> Growth Seeker's Email: </label><br>
+        <input id="gsemail" type="email" name="gsemail" ><br>
+        <label for="gsoccupation"> What category of growth seeker are you? </label><br>
+        <input id="gsoccupation" type="radio" name ="gsoccupation" value="Worker"> Worker <br>
+        <input id="gsoccupation" type="radio" name ="gsoccupation" value="Entrepreneur"> Entrepreneur <br>
+        <input id="gsoccupation" type="radio" name ="gsoccupation" value="Undergraduate"> Undergraduate <br>
+        <input id="gsoccupation" type="radio" name ="gsoccupation" value="Teenager"> Teenager <br>
+        <label for="gsoccupation"> Which of the growth programmes would you like to sign up for? </label><br>
+        <select id="gsoccupation" name="gsoccupation" size="1" multiple><br>
+            <option value="One Growth Personal Mentorship"> One Growth Personal Mentorship</option><br>
+            <option value="One Growth Clarity Session"> One Growth Clarity Session</option><br>
+            <option value="One Growth Writing Academy"> One Growth Writing Academy</option><br>
+        </select><br>
+        <input type="submit" value="Submit" class="button">
+    </form>
+</body>
+</html>
