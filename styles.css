@@ -26,7 +26,7 @@ nav{
     display: flex;
     padding: 0 40px;
     position:fixed;
-    z-index: +1;
+    z-index: 1;
     background-color: #ffffff;
     border-bottom: 2px solid #f1f5f9;
 }
@@ -51,21 +51,21 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #f97316;
-  border-color:#f97316;  ;
+  border-color:#f97316;  
   background-color: #fff4ee;
 }
 
 nav ul li a:active {
   color: #f97316;
-  border-color:#f97316;  ;
+  border-color:#f97316;  
   background-color: #fff4ee;
 }
 
 nav ul li a.active {
     color: #f97316;
     background-color: #fff4ee;
-    border-radius: 4px; /* Optional: smooths out the box corners like your design */
-    padding: 6px 12px;  /* Adds proper breathing room inside the orange background */
+    border-radius: 4px; 
+    padding: 6px 12px;  
 }
 
 .nav-links{
@@ -109,7 +109,7 @@ header  {
   font-family: 'Roboto Slab', serif;
 }
 
-/* For the orange "stand out." text */
+/* For orange "stand out." text */
 .stand-out {
   color: #ff6b2b;             
 }
@@ -148,7 +148,7 @@ header  {
 
 .header-bottom-text {
     display: flex;
-    gap: 1rem;                     /* Space between the buttons */
+    gap: 1rem;        /* Space between the buttons */
     margin-top: 20px;             
 }
 
@@ -183,7 +183,6 @@ header  {
     background-color: #0f172a;
     border-radius: 0.9em;
     padding: 0.5em 1em;
-    text-variant: small-caps;
     font-size: 0.8rem;
 }
 
@@ -251,8 +250,8 @@ section {
 }
 
 .about-side-style {
-    flex: 1; /* Allows the text to take up remaining space */
-    max-width: 600px; /* Optional: Limit the maximum width */
+    flex: 1; 
+    max-width: 600px; 
 }
 
 .about-stats {
@@ -308,7 +307,7 @@ section {
 .expertise-skills {
     display: grid;
     gap: 20px 60px; /* 20px gap between rows, 60px gap between columns */
-    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
 }
 
 .expertise-skill p {
@@ -331,10 +330,10 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
-    gap: 60px; /* 20px gap between rows, 60px gap between columns */
+    gap: 60px; 
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    align-items: center; /* Align items to the top */
+    align-items: center; 
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -519,13 +518,13 @@ form {
     transition: border-color 0.2s ease;
 }
 
-.form-overall input::placeholder
+.form-overall input::placeholder, .form-overall
  textarea::placeholder {
     color: #94a3b8; 
 }
 
 form input:focus,
- textarea:focus {
+ form textarea:focus {
     border-color:  #435168;
     box-shadow: 0 0 0 4px rgba(140, 151, 180, 0.2);
     outline: none;
