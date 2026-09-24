@@ -80,6 +80,8 @@ header  {
     min-height: 100vh;
     padding: 100px; 
     display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
     background-color: #0f172a;
@@ -234,6 +236,7 @@ section {
     min-height: 100vh;
     padding:  100px; 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #f8fafc;
@@ -250,7 +253,7 @@ section {
 }
 
 .about-side-style {
-    flex: 1; 
+    flex-wrap: wrap; 
     max-width: 600px; 
 }
 
@@ -516,6 +519,10 @@ form {
     color: #fff;
     outline: none;
     transition: border-color 0.2s ease;
+}
+
+form textarea {
+    resize: none;
 }
 
 .form-overall input::placeholder, .form-overall
